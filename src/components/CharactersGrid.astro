@@ -1,0 +1,38 @@
+---
+import HeaderButton from "./HeaderButton.astro";
+import ImageRounded from "./ImageRounded.astro";
+
+const href = '/'
+
+const srcBob = '/bob-cara.webp'
+const altBob = 'cara de bob esponja'
+const hrefBob = '/bob'
+
+
+---
+
+<div class="p-10">    
+    <div class="text-4xl flex flex-col justify-center items-center">
+        <h2 class="mb-4 text-5xl tracking-tight font-extrabold text-white">            
+            Tus gustos son únicos 😄
+        </h2>        
+        <p class="font-light text-gray-500 pb-5">            
+            Los personajes que son tus favoritos reflejan un poco de lo que eres en realidad.
+            Da click en cualquier imagen para descubrirlo.
+        </p>              
+        <div class="flex items-center justify-center gap-6 pb-5">
+            <ImageRounded src={srcBob} alt={altBob} href={hrefBob}></ImageRounded>
+            <ImageRounded src={srcBob} alt={altBob} href={hrefBob}></ImageRounded>
+            <ImageRounded src={srcBob} alt={altBob} href={hrefBob}></ImageRounded>
+            <ImageRounded src={srcBob} alt={altBob} href={hrefBob}></ImageRounded>
+        </div>                      
+        <!--p id="fraseMotivacional" class="font-light text-gray-500">     
+            {parrafoMotivacional}       
+        </!--p-->
+    </div>    
+
+    <nav class="flex items-center justify-center w-full text-center md:flex-row pt-4"> 
+        <HeaderButton class="text-white" href="/">Inicio 🏚️</HeaderButton>
+        <HeaderButton class="text-white" href={href}>Continuar ➡️</HeaderButton>
+    </nav>
+</div>

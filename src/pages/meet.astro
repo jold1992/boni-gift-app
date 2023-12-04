@@ -1,0 +1,14 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Words from '../components/Words.astro';
+
+const titulo = "Eres una persona maravillosa"
+const texto = "En este corto tiempo que he tenido el placer de conocerte me has demostrado lo que es la valentía y el optimismo, a no darse por vencido y siempre a tener una sonrisa en la cara."
+const href = "/characters"
+const image = "/cartoon-network-escandalosos.gif"
+const alt = "Osos escandalosos facheritos"
+---
+
+<Layout title="BonitApp ;)">    
+	<Words titulo={titulo} texto={texto} href={href} image={image} alt={alt} />
+</Layout>
