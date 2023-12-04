@@ -10,111 +10,6 @@ interface Props {
 }
 
 const { titulo, texto, href, image, alt } = Astro.props;
-
-const frasesMotivacionChica = [
-  "Eres más fuerte de lo que piensas.",
-  "Cree en ti misma y todo será posible.",
-  "Tu actitud determina tu dirección.",
-  "El éxito no es la clave de la felicidad, la felicidad es la clave del éxito.",
-  "Eres capaz de superar cualquier desafío que se presente en tu camino.",
-  "Cada día es una nueva oportunidad para brillar.",
-  "La confianza en ti misma es el mejor accesorio que puedes llevar.",
-  "No te compares con nadie más; sé la mejor versión de ti misma.",
-  "Tus sueños son la brújula que guía tu dirección.",
-  "La perseverancia es la clave del éxito.",
-  "Eres única, y eso es tu superpoder.",
-  "Cada logro comienza con la decisión de intentarlo.",
-  "No tengas miedo de ser brillante en un mundo que a veces prefiere la oscuridad.",
-  "Tu sonrisa ilumina el mundo a tu alrededor.",
-  "El éxito es la suma de pequeños esfuerzos repetidos día tras día.",
-  "Eres capaz de lograr todo lo que te propongas.",
-  "Las dificultades en la vida no te detienen; te definen.",
-  "La belleza comienza en el momento en que decides ser tú misma.",
-  "Nunca subestimes el poder de tus elecciones.",
-  "Cada paso que tomas te acerca a tus metas.",
-  "Eres más valiente de lo que crees, más fuerte de lo que pareces y más inteligente de lo que piensas.",
-  "El éxito no es la clave de la felicidad, la felicidad es la clave del éxito.",
-  "La única forma de hacer un gran trabajo es amar lo que haces.",
-  "Cree en tus sueños y ellos se harán realidad.",
-  "La única limitación que tienes es la que te impones a ti misma.",
-  "Cada día es una nueva oportunidad para ser la mejor versión de ti misma.",
-  "La magia está en ti; descúbrela y haz que suceda.",
-  "Nunca es demasiado tarde para ser lo que podrías haber sido.",
-  "Eres suficiente tal como eres; no necesitas la aprobación de nadie más.",
-  "Tú eres la dueña de tu destino; toma el control y hazlo extraordinario.",
-  "La vida es 10% lo que nos sucede y 90% cómo reaccionamos ante ello.",
-  "Tus sueños están esperando a que tomes acción.",
-  "La confianza es silenciosa, la inseguridad es ruidosa.",
-  "Eres una obra maestra en progreso; sé paciente contigo misma.",
-  "No te preocupes por los errores y fracasos; son parte del camino hacia el éxito.",
-  "El éxito es la suma de pequeños esfuerzos repetidos día tras día.",
-  "Sé la energía que quieres atraer.",
-  "Tus pensamientos crean tu realidad; elige pensamientos positivos.",
-  "La única forma de hacer un gran trabajo es amar lo que haces.",
-  "La confianza en ti misma es la mejor apariencia que puedes tener.",
-  "La vida es demasiado corta para no ser feliz.",
-  "Eres lo suficientemente fuerte para enfrentar cualquier desafío.",
-  "Hoy es el día para comenzar a trabajar en tus sueños.",
-  "Tú eres la autora de tu propia historia; hazla increíble.",
-  "No hay límites para lo que puedes lograr.",
-  "Cada día es una nueva oportunidad para aprender y crecer.",
-  "La fuerza no viene de lo que puedes hacer, sino de superar lo que creías que no podías.",
-  "Eres una guerrera, no una perdedora.",
-  "La verdadera belleza viene de ser auténtica y fiel a ti misma.",
-  "La felicidad no es algo que pospones para el futuro; es algo que diseñas para el presente.",
-  "Eres más poderosa de lo que imaginas.",
-  "La perseverancia es la llave del éxito; nunca te rindas.",
-  "Cree en tus habilidades y nada será imposible para ti.",
-  "Tú eres la razón por la que sonrío todos los días.",
-  "No tienes que ser perfecta para ser increíble.",
-  "Cada día es una oportunidad para ser un poco mejor que ayer.",
-  "Eres una chispa de luz en un mundo a veces oscuro.",
-  "La vida es una aventura; vívela al máximo.",
-  "No te detengas hasta estar orgullosa.",
-  "Eres capaz de lograr todo lo que te propongas.",
-  "La clave para alcanzar tus sueños es comenzar.",
-  "Tú eres la dueña de tus elecciones; elige sabiamente.",
-  "Hoy es un buen día para comenzar algo nuevo.",
-  "La magia está en creer en ti misma.",
-  "Eres única, preciosa y valiosa.",
-  "Cada logro comienza con la decisión de intentarlo.",
-  "El éxito no es el final, el fracaso no es fatal: lo que cuenta es el valor de seguir adelante.",
-  "Eres capaz de superar cualquier obstáculo.",
-  "Tú eres la artista de tu propia vida; pinta un lienzo hermoso.",
-  "La confianza en ti misma es el secreto del éxito.",
-  "Eres una fuerza imparable de la naturaleza.",
-  "Las oportunidades están en todas partes; solo tienes que verlas.",
-  "Tus sueños son la brújula que guía tu dirección.",
-  "Sé agradecida por lo que tienes y trabaja duro por lo que quieres.",
-  "Eres lo suficientemente inteligente, lo suficientemente fuerte, lo suficientemente valiente.",
-  "No dejes que nadie apague tu luz; brilla con fuerza.",
-  "La vida es demasiado corta para vivir con arrepentimientos.",
-  "Tú eres la heroína de tu propia historia.",
-  "La felicidad es una elección que haces cada día.",
-  "No te preocupes por el pasado, enfócate en construir tu futuro.",
-  "Eres capaz de lograr todo lo que te propongas.",
-  "Cada día es una página en blanco; escribe una buena historia.",
-  "La paciencia y la perseverancia son las claves del éxito.",
-  "Eres más fuerte de lo que crees, más inteligente de lo que piensas y más valiente de lo que imaginas.",
-  "Hoy es el día para ser la mejor versión de ti misma.",
-  "No tienes que ser perfecta para ser asombrosa.",
-  "La vida es una aventura emocionante; disfruta el viaje.",
-  "Eres una joya única en este mundo; brilla con todo tu esplendor.",
-  "La confianza en ti misma es tu mejor carta de presentación.",
-  "Eres capaz de convertir tus sueños en realidad.",
-  "La actitud lo es todo; mantén una actitud positiva.",
-  "El éxito es la suma de pequeños esfuerzos repetidos día tras día.",
-  "Tú eres la arquitecta de tu propio destino.",
-];
-
-// Función para obtener una frase aleatoria
-function obtenerFraseAleatoria() {
-      const indiceAleatorio = Math.floor(Math.random() * frasesMotivacionChica.length);
-      return frasesMotivacionChica[indiceAleatorio];
-    }
-
-// Mostrar la frase aleatoria en el elemento <p>
-const parrafoMotivacional = obtenerFraseAleatoria();
 ---
 
 <div class="p-10">    
@@ -126,14 +21,11 @@ const parrafoMotivacional = obtenerFraseAleatoria();
             {texto}
         </p>              
         
-        <img class="w-[45%]" src={image} alt={alt}>              
-        <!--p id="fraseMotivacional" class="font-light text-gray-500">     
-            {parrafoMotivacional}       
-        </!--p-->
+        <img class="w-[45%] rounded-[2.5rem] pt-4" src={image} alt={alt}>                      
     </div>    
 
     <nav class="flex items-center justify-center w-full text-center md:flex-row pt-4"> 
         <HeaderButton class="text-white" href="/">Inicio 🏚️</HeaderButton>
-        <HeaderButton class="text-white" href={href}>Continuar ➡️</HeaderButton>
+        <HeaderButton class="text-white" href={href}>Sigue 😏</HeaderButton>
     </nav>
 </div>

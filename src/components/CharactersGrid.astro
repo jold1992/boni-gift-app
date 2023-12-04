@@ -8,6 +8,17 @@ const srcBob = '/bob-cara.webp'
 const altBob = 'cara de bob esponja'
 const hrefBob = '/bob'
 
+const srcEsc = '/cara-panda.webp'
+const altEsc = 'cara de los escandalosos'
+const hrefEsc = '/escandalosos'
+
+const srcHello = '/hello-kitty.webp'
+const altHello = 'cara de hello kitty'
+const hrefHello = '/hello-kitty'
+
+const srcJack = '/cara-jack.webp'
+const altJack = 'cara de super jack'
+const hrefJack = '/jack'
 
 ---
 
@@ -20,19 +31,28 @@ const hrefBob = '/bob'
             Los personajes que son tus favoritos reflejan un poco de lo que eres en realidad.
             Da click en cualquier imagen para descubrirlo.
         </p>              
-        <div class="flex items-center justify-center gap-6 pb-5">
-            <ImageRounded src={srcBob} alt={altBob} href={hrefBob}></ImageRounded>
-            <ImageRounded src={srcBob} alt={altBob} href={hrefBob}></ImageRounded>
-            <ImageRounded src={srcBob} alt={altBob} href={hrefBob}></ImageRounded>
-            <ImageRounded src={srcBob} alt={altBob} href={hrefBob}></ImageRounded>
-        </div>                      
-        <!--p id="fraseMotivacional" class="font-light text-gray-500">     
-            {parrafoMotivacional}       
-        </!--p-->
+        <div class="flex items-center justify-center gap-6 pb-5 text-gray-400">
+            <div class="flex flex-col align-middle text-center">
+                <ImageRounded src={srcBob} alt={altBob} href={hrefBob}></ImageRounded>
+                <p class="text-sm pt-2">Optimismo</p>
+            </div>
+            <div class="flex flex-col align-middle text-center">
+                <ImageRounded src={srcEsc} alt={altEsc} href={hrefEsc}></ImageRounded>
+                <p class="text-sm pt-2">Amistad</p>
+            </div>
+            <div class="flex flex-col align-middle text-center">
+                <ImageRounded src={srcHello} alt={altHello} href={hrefHello}></ImageRounded>
+                <p class="text-sm pt-2">Ternura</p>
+            </div>
+            <div class="flex flex-col align-middle text-center">
+                <ImageRounded src={srcJack} alt={altJack} href={hrefJack}></ImageRounded>
+                <p class="text-sm pt-2">Empoderada</p>
+            </div>                    
+        </div>                              
     </div>    
 
     <nav class="flex items-center justify-center w-full text-center md:flex-row pt-4"> 
         <HeaderButton class="text-white" href="/">Inicio 🏚️</HeaderButton>
-        <HeaderButton class="text-white" href={href}>Continuar ➡️</HeaderButton>
+        <HeaderButton class="text-white" href={href}>Sigue 😏</HeaderButton>
     </nav>
 </div>
