@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Words from '../components/Words.astro';
+import PlaylistGrid from '../components/PlaylistGrid.astro';
 
 const titulo = "The playlist is back 🥳"
 const texto = "Te quiero entregar una segunda parte del Boni's playlist, espero que las disfrutes tanto como yo. 😄"
@@ -10,4 +11,5 @@ const href = "/playlist"
 
 <Layout title="BonitApp ;)">    
 	<Words titulo={titulo} texto={texto} href={href} image={""} alt={""} />
+	<PlaylistGrid />
 </Layout>
