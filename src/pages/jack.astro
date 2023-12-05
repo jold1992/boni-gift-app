@@ -1,0 +1,14 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Words from '../components/Words.astro';
+
+const titulo = "Empoderada 💪"
+const texto = "Al igual que Jack, posees sus cualidades únicas, su originalidad y creatividad. Tienes la capacidad de transformar lo cotidiano en algo extraordinario. Eres valiente para explorar nuevas ideas y una habilidad increíble para inspirarme con tu sigularidad y perspectiva única. Además que eres capaz de hacer todo lo que te propones. Te admiro mucho 🫶"
+const href = "/characters"
+const image = "/jack-animado.gif"
+const alt = "jack y su perrito"
+---
+
+<Layout title="BonitApp ;)">    
+	<Words titulo={titulo} texto={texto} href={href} image={image} alt={alt} />
+</Layout>

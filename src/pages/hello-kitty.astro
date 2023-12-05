@@ -1,0 +1,14 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Words from '../components/Words.astro';
+
+const titulo = "Ternurita 🥹"
+const texto = "A primera vista, podrías parecer como si estuvieras planeando conquistar el mundo con una sonrisa misteriosa y mirada calculadora. Pero, en cuanto cruzas la superficie de aparente frialdad, te encuentras con una amiga que te cuida como si fueras su tesoro más preciado. ¡Eres una combinación única de misterio y ternura que simplemente no puedes resistir!"
+const href = "/characters"
+const image = "/kitty-animada.webp"
+const alt = "kitty saludando"
+---
+
+<Layout title="BonitApp ;)">    
+	<Words titulo={titulo} texto={texto} href={href} image={image} alt={alt} />
+</Layout>

@@ -1,0 +1,14 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Words from '../components/Words.astro';
+
+const titulo = "La música nos une 🤟"
+const texto = "Desde los primeros acordes de \"Los Malaventurados No Lloran\" hasta los momentos en que convertimos nuestras penas en un concierto privado con sus canciones, Pxndx fue el punto de encuentro que selló nuestra amistad. ¡La música de Pxndx fue más que el soundtrack, fue el lazo que creó los mejores momentos de nuestra historia juntos! 🎶🤘"
+const href = "/playlist"
+const image = "/pxndx.gif"
+const alt = "procedimientos para llegar a un comun acuerdo"
+---
+
+<Layout title="BonitApp ;)">    
+	<Words titulo={titulo} texto={texto} href={href} image={image} alt={alt} />
+</Layout>
