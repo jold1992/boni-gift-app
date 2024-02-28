@@ -308,8 +308,23 @@
     <div class="absolute w-[480px] flex flex-col items-center -ml-56 bottom-2">
       <p class="text-3xl">Alles Gute zum Valentinstag 💜</p>
       <p class="text-2xl">Ich liebe dich so sehr Estefy</p>
-      <audio class="pb-1" src="Hymn_For_The_Weekend.mp3" controls loop></audio>
+      <!--audio class="pb-1" src="Hymn_For_The_Weekend.mp3" controls loop></audio-->
+      <audio id="play" class="pb-1" src="chica_tormenta.mp3" controls loop></audio>
       <a class="border border-cyan-500 rounded-md p-1 hover:bg-cyan-600 z-100" href="/boni">Go to BonitApp ➡️ 💀</a>
-    </div>      
+    </div>
+    <script>
+      function genList() {
+        const lista = ['chica_tormenta.mp3', 'dinamita.mp3', 'En_vano.mp3', 'Hymn_For_The_Weekend.mp3']
+
+        const indice = Math.floor(Math.random() * lista.length)
+
+        document.getElementById('play').src = lista[indice]
+
+      }
+
+
+
+       genList();
+    </script>      
   </body>  
 </html>
