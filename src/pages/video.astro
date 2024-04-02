@@ -1,0 +1,15 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Words from '../components/Words.astro';
+import VideoCard from '../components/VideoCard.astro';
+
+const titulo = "Music 🎧"
+const texto = "Escucha tu música donde quieras. 💃"
+const href = "/"
+
+---
+
+<Layout title="BonitApp ;)">    
+	<Words titulo={titulo} texto={texto} href={href} image={""} alt={""} />
+	<VideoCard />
+</Layout>
