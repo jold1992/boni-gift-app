@@ -1,15 +1,19 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import HeaderButton from '../components/HeaderButton.astro';
+import PlaylistGrid3 from '../components/PlaylistGrid3.astro';
 import Words from '../components/Words.astro';
-import PlaylistGrid from '../components/PlaylistGrid.astro';
+import Layout from '../layouts/Layout.astro';
 
-const titulo = "The playlist is back 🥳"
-const texto = "Te quiero entregar una segunda parte del Boni's playlist, espero que las disfrutes tanto como yo. 😄"
+const titulo = "Boni's Playlist #3 🥳"
+const texto = "Mas vale tarde que nunca y nunca será tarde para enlistar nueva música. Yeiii 🎉"
 const href = "/"
 
 ---
 
 <Layout title="BonitApp ;)">    
 	<Words titulo={titulo} texto={texto} href={href} image={""} alt={""} />
-	<PlaylistGrid />
+	<PlaylistGrid3 />
+	<div class="flex items-center justify-center w-full text-center md:flex-row pt-4">
+		<HeaderButton class="text-white" href="/playlist-2">Ir a playlist #2</HeaderButton>
+	</div>
 </Layout>
