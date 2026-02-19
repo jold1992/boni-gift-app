@@ -1,5 +1,5 @@
 ---
-import { FraseMotivacional } from "./FraseMotivacional";
+import FraseMotivacional from "./FraseMotivacional.astro";
 import HeaderButton from "./HeaderButton.astro";
 ---
 <div class="p-10">    
@@ -8,7 +8,7 @@ import HeaderButton from "./HeaderButton.astro";
             Feliz cumple Boni 🥳
         </h2>                                
         <img class="rounded-full ml-2" src="/jack-skellington-birthday.gif" alt="Descripción del GIF animado">       
-        <FraseMotivacional client:load />
+        <FraseMotivacional />
     </div>    
     
     <nav class="flex flex-col items-center justify-center w-full text-center md:flex-row pt-4">        
